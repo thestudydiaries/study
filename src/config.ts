@@ -1,9 +1,9 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://studydiaries.netlify.app/", // replace this with your deployed domain
+  author: "StudyDiaries",
+  profile: "https://studydiaries.netlify.app/",
+  desc: "A study journal on thoughts and reflections.",
+  title: "The Study Diaries",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
