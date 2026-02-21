@@ -10,18 +10,14 @@ export const SITE: Site = {
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
-  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  scheduledPostMargin: 15 * 60 * 1000,
   showArchives: true,
   showBackButton: true,
   editPost: {
-    enabled: false, // Turned this off so your site looks cleaner
-    url: "https://github.com/your-username/your-repo-name/edit/main/src/content/blog/",
-    text: "Edit Post",
+    enabled: false,
+    text: "Edit page",
+    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog/",
   },
-  dynamicOgImage: true,
-  dir: "ltr",
-  lang: "en",
-  timezone: "Asia/Bangkok",
 };
 
 export const LOCALE = {
@@ -30,7 +26,7 @@ export const LOCALE = {
 } as const;
 
 export const LOGO_IMAGE = {
-  enable: false, // Keeps the minimalist text logo
+  enable: false,
   svg: true,
   width: 216,
   height: 46,
@@ -40,7 +36,7 @@ export const SOCIALS: SocialObjects = [
   {
     name: "Github",
     href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `Follow on Github`,
+    linkTitle: ` ${SITE.title} on Github`,
     active: false,
   },
 ];
