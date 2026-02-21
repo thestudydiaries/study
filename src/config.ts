@@ -1,5 +1,7 @@
-export const SITE = {
-  website: "https://studydiaries.netlify.app/", // replace this with your deployed domain
+import type { Site, RuntimeConfig, SocialObjects } from "./types";
+
+export const SITE: Site = {
+  website: "https://studydiaries.netlify.app/",
   author: "StudyDiaries",
   profile: "https://studydiaries.netlify.app/",
   desc: "A study journal on thoughts and reflections.",
@@ -10,14 +12,35 @@ export const SITE = {
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
-  showBackButton: true, // show back button in post detail
+  showBackButton: true,
   editPost: {
-    enabled: true,
-    text: "Edit page",
-    url: "https://studydiaries.netlify.app/",
+    enabled: false, // Turned this off so your site looks cleaner
+    url: "https://github.com/your-username/your-repo-name/edit/main/src/content/blog/",
+    text: "Edit Post",
   },
   dynamicOgImage: true,
-  dir: "ltr", // "rtl" | "auto"
-  lang: "en", // html lang code. Set this empty and default will be "en"
+  dir: "ltr",
+  lang: "en",
   timezone: "Asia/Bangkok",
+};
+
+export const LOCALE = {
+  lang: "en",
+  langTag: ["en-EN"],
 } as const;
+
+export const LOGO_IMAGE = {
+  enable: false, // Keeps the minimalist text logo
+  svg: true,
+  width: 216,
+  height: 46,
+};
+
+export const SOCIALS: SocialObjects = [
+  {
+    name: "Github",
+    href: "https://github.com/satnaing/astro-paper",
+    linkTitle: `Follow on Github`,
+    active: false,
+  },
+];
